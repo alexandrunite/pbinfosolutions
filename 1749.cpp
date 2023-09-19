@@ -1,26 +1,23 @@
 #include <iostream>
-
 using namespace std;
-int a[25][25];
+
+int a[101][101];
+
 int main()
 {
-    int n,i,j;
-    cin>>n;
+    int z,n,i,j,suma1=0,suma2=0,suma3=0,suma4=0;
+    cin>>n>>z;
     for(i=1;i<=n;i++)
         for(j=1;j<=n;j++)
         {
            if(i<j&&i+j<n+1)
-                a[i][j]=1;
+                suma1+=a[i][j];
            else if(j<i&&i+j>n+1)
-                a[i][j]=2;
+                suma2;
            else if(!(i==j||i+j==n+1))
                 a[i][j]=3;
         }
-    for(i=1;i<=n;i++)
-    {
-        for(j=1;j<=n;j++)
-            cout<<a[i][j]<<' ';
-        cout<<'\n';
-    }
+    cout<<suma;
     return 0;
 }
+
